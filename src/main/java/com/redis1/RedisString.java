@@ -4,7 +4,6 @@ import redis.clients.jedis.Jedis;
 
 /**
  * Redis String数据类型
- * @author dell
  *
  */
 public class RedisString {

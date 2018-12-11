@@ -6,7 +6,6 @@ import java.util.Set;
 
 /**
  * Redis set数据类型
- * @author dell
  *
  */
 public class RedisSet {

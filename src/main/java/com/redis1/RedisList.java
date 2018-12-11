@@ -7,8 +7,7 @@ import java.util.List;
 
 /**
  * redis list数据类型
- * 
- * @author dell
+ *
  *
  */
 public class RedisList {

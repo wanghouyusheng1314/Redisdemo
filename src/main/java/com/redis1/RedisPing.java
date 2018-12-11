@@ -4,7 +4,6 @@ import redis.clients.jedis.Jedis;
 
 /**
  * Java连接redis服务,看是否运行
- * @author dell
  *
  */
 public class RedisPing {

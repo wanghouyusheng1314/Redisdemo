@@ -4,7 +4,6 @@ import redis.clients.jedis.Jedis;
 
 /**
  * Java使用redis
- * @author dell
  *
  */
 public class RedisJava {
