@@ -59,7 +59,7 @@ public class RedisExample {
 		System.out.println("resultQueue= " + resultQueue);
 
 		//Redis Flushall 命令用于清空整个 Redis 服务器的数据(删除所有数据库的所有 key )。
-
+		redisson.flushdb();
 
 		//关闭连接
 		redisson.shutdown();

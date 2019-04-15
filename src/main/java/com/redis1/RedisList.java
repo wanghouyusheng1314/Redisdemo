@@ -14,7 +14,7 @@ public class RedisList {
 
 	public static void main(String[] args) {
 		// 连接本地的 Redis 服务
-		Jedis jedis = new Jedis("localhost");
+		Jedis jedis = new Jedis("127.0.0.1");
 		System.out.println("redis本地服务连接成功！");
 		/*
 		 * lpush 表示从list的头部插入元素 rpush 表示从list的尾部插入元素 linsert 在列表的某个元素前或者后插入元素
@@ -43,8 +43,8 @@ public class RedisList {
 		// 获得列表的长度
 		System.out.println("redis列表长度为：" + jedis.llen("SQL"));
 		// 删除列表中的元素
-		jedis.del("SQL");
-		System.out.println("删除了redis列表！");
+		//jedis.del("SQL");
+		System.out.println("删除了redis列表SQL！");
 		// 获得列表的长度
 		System.out.println("redis列表长度为：" + jedis.llen("SQL"));
 		// 列表下标从0开始
