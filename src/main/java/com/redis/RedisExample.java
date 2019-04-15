@@ -27,6 +27,7 @@ public class RedisExample {
 		map.put("sss", "ÄÐ");
 		map.put("www","Å®");
 		map.put("eee","Å®");
+		map.put("eee","nan");
 
 		ConcurrentMap resultMap =redisson.getMap("FirstMap");
 		System.out.println("resultMap=" + resultMap.keySet());
