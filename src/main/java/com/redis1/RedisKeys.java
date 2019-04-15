@@ -10,7 +10,7 @@ public class RedisKeys {
 	public static void main(String[] args) {
 		//连接redis本地服务
 		Jedis jedis = new Jedis("127.0.0.1");
-		System.out.println("redis本地服务连接成功！");
+		System.out.println("redis本地服务连接成功！"); //TODO
 		/*Redis Bgsave 命令用于在后台异步保存当前数据库的数据到磁盘。
           BGSAVE 命令执行之后立即返回 OK ，然后 Redis fork 出一个新子进程，
                        原来的 Redis 进程(父进程)继续处理客户端请求，而子进程则负责将数据保存到磁盘，然后退出。
@@ -39,7 +39,6 @@ public class RedisKeys {
 		  Redis Multi 命令用于标记一个事务块的开始。
                       事务块内的多条命令会按照先后顺序被放进一个队列当中，最后由 EXEC 命令原子性(atomic)地执行。
          */
-		 
 		System.out.println(jedis.multi());
 		/*Redis Quit 命令用于关闭与当前客户端与redis服务的连接。
 		一旦所有等待中的回复(如果有的话)顺利写入到客户端，连接就会被关闭。*/
