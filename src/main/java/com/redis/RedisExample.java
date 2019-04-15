@@ -28,6 +28,8 @@ public class RedisExample {
 		map.put("www","Ů");
 		map.put("eee","Ů");
 		map.put("eee","nan");
+		map.put("eee","nan");
+		map.put("eee","nan");
 
 		ConcurrentMap resultMap =redisson.getMap("FirstMap");
 		System.out.println("resultMap=" + resultMap.keySet());
